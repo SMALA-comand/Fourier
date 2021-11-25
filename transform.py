@@ -17,9 +17,8 @@ def compute_pol(a0, a1, om):
 
 def fft(values):
     """
-
-    :param values:
-    :return:
+    :param values: коэффициенты полинома 
+    :return: ans - значения результирующего массива. om - в каких точках получены значения ans
     """
     while math.log2(len(values)) < math.ceil(math.log2(len(values))):
         values.append(0)
