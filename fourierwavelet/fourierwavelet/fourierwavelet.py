@@ -5,8 +5,8 @@
 Из полученного csv файла через библиотеки scipy.fft и pywt.
 Представлены следующие функции: преобразование Фурье, преобразование Вейвлет.
 Преобразование Вейвлет делится в свою очередь на:
-1) Дискретные тип (DWT): Haar (haar) и Daubechies (db)
-2) Непрерывный тип (CWT): Gaussian wavelets (gaus) и Mexican hat wavelet (mexh).
+1) Дискретные тип (DWT): Haar (haar) и Daubechies (db2)
+2) Непрерывный тип (CWT): Gaussian wavelets (gaus1) и Mexican hat wavelet (mexh).
 """
 import matplotlib.pyplot as plt
 from scipy.fft import rfft, rfftfreq, irfft
@@ -99,7 +99,7 @@ def wavelets_dwt(path, name):
     Готовое дискретное преобразование Вейвлет через библиотеку pywt
 
     :param path: путь до csv файла с координатами, разделитель - запятая, десятичная часть числа отделяется точкой
-    :param name: Тип функции преобразования. Работает для Haar (haar) и Daubechies (db)
+    :param name: Тип функции преобразования. Работает для Haar (haar) и Daubechies (db2)
     пишется в кавычках
     :return: Вывод графика преобразование Вейвлет до 4 уровня + коэффициент несинусоидальности
     """
@@ -155,7 +155,7 @@ def wavelets_cwt(path, name):
     Готовое непрерывное преобразование Вейвлет через библиотеку pywt
 
     :param path: путь до csv файла с координатами, разделитель - запятая, десятичная часть числа отделяется точкой
-    :param name: Тип функции преобразования. Работает для Gaussian wavelets (gaus) и Mexican hat wavelet (mexh)
+    :param name: Тип функции преобразования. Работает для Gaussian wavelets (gaus1) и Mexican hat wavelet (mexh)
     пишется в кавычках
     :return: Вывод графика преобразование Вейвлет до 4 уровня
     """

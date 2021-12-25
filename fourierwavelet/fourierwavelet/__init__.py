@@ -8,4 +8,4 @@ from .fourierwavelet import fourier, wavelets_dwt, wavelets_cwt
 
 __author__ = 'Artem Radaykin'
 
-__version__ = "0.0.4"
+__version__ = "0.0.5"
