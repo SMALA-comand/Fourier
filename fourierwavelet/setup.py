@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name="fourierwavelet",
     packages=find_packages(),
-    version="0.0.5",
+    version="0.0.6",
     description='Ready-made Fourier transform and Wavelet from a csv file',
     author="Artem Radaykin",
     author_email="radaykin.artem@mail.ru",

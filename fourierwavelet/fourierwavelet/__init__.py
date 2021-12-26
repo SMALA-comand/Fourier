@@ -6,6 +6,8 @@
 """
 from .fourierwavelet import fourier, wavelets_dwt, wavelets_cwt
 
-__author__ = 'Artem Radaykin'
+__author__ = 'Марк Козлов, Вячеслав Есаков, Артём Радайкин, Александр Савостьянов, Лев Памбухчян'
 
-__version__ = "0.0.5"
+__all__ = ['fourier', 'wavelets_dwt', 'wavelets_cwt']
+
+__version__ = "0.0.6"
